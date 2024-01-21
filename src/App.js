@@ -2,23 +2,28 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import BlogPost from './pages/BlogPost';
-import { React, useState } from 'react';
+import { Fragment, React, useState } from 'react';
 
 function App() {
   const [getBlogContent, setGetBlogContent] = useState([]);
   const getData = (blog) => {
     setGetBlogContent(blog);
   };
+
   return (
     <div>
       <div className='app-container'>
-        <div className='container'>
+        <div className='page-container'>
           <Routes>
-            <Route path='/' element={<HomePage data={getData} />} />
-            <Route
-              path='/blog/:id'
-              element={<BlogPost content={getBlogContent} />}
-            />
+            <Fragment className='home-page-container'>
+              <Route path='/' element={<HomePage data={getData} />} />
+            </Fragment>
+            <Fragment className='blog-page-container'>
+              <Route
+                path='/blog/:id'
+                element={<BlogPost content={getBlogContent} />}
+              />
+            </Fragment>
           </Routes>
         </div>
       </div>
