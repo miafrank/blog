@@ -4,6 +4,7 @@ import BlogList from '../components/BlogList';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import { blogList } from '../config/Api';
+import NavBar from '../components/NavBar';
 
 const HomePage = ({ data }) => {
     console.log({ blogList })
@@ -43,6 +44,7 @@ const HomePage = ({ data }) => {
         <div>
             {/* Page Header */}
             <Header />
+            <NavBar />
             {/* Search Bar */}
             <SearchBar
                 value={searchKey}
