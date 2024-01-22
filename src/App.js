@@ -15,10 +15,10 @@ function App() {
       <div className='app-container'>
         <div className='page-container'>
           <Routes>
-            <Fragment className='home-page-container'>
+            <Fragment>
               <Route path='/' element={<HomePage data={getData} />} />
             </Fragment>
-            <Fragment className='blog-page-container'>
+            <Fragment>
               <Route
                 path='/blog/:id'
                 element={<BlogPost content={getBlogContent} />}
