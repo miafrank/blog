@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import BlogPost from './pages/BlogPost';
 import { Fragment, React, useState } from 'react';
+import HomeFooter from './components/Footer';
 
 function App() {
   const [getBlogContent, setGetBlogContent] = useState([]);
@@ -27,6 +28,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <HomeFooter />
     </div >
   );
 }
