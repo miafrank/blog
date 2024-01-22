@@ -4,10 +4,10 @@ import BlogList from '../components/BlogList';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import { blogList } from '../config/Api';
-import NavBar from '../components/NavBar';
+import NavBarHome from '../components/NavBar';
+import HomeFooter from '../components/Footer';
 
 const HomePage = ({ data }) => {
-    console.log({ blogList })
     const [blogs, setBlogs] = useState([]);
     const [searchKey, setSearchKey] = useState('');
 
@@ -42,22 +42,25 @@ const HomePage = ({ data }) => {
 
     return (
         <div>
-            {/* Page Header */}
+            <div className='home-header'></div>
             <Header />
-            <NavBar />
-            {/* Search Bar */}
-            <SearchBar
-                value={searchKey}
-                clearSearch={handleClearSearch}
-                formSubmit={handleSearchBar}
-                handleSearchKey={(e) => setSearchKey(e.target.value)}
-            />
-            {/* Blog List & Empty View */}
+            <div className='search-bar-nav-container'>
+                <NavBarHome />
+                <div className='search-bar-home-page'>
+                    <SearchBar
+                        value={searchKey}
+                        clearSearch={handleClearSearch}
+                        formSubmit={handleSearchBar}
+                        handleSearchKey={(e) => setSearchKey(e.target.value)}
+                    />
+                </div>
+            </div>
             {!blogs.length ? (
                 <EmptyList />
             ) : (
                 <BlogList blogs={blogs} content={BlogContent} />
             )}
+            <HomeFooter />
         </div>
     );
 };
