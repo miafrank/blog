@@ -1,13 +1,13 @@
 import { React } from 'react';
-import Chip from '../components/Chip';
-import EmptyList from '../components/EmptyList';
+import Chip from './Chip';
+import EmptyList from './EmptyList';
 import '../index.css';
 import { Link } from 'react-router-dom';
 
-const Blog = ({ content }) => {
+const BlogPost = ({ content }) => {
     return (
         <>
-            <Link className='blog-goBack' to='/'>
+            <Link className='blogPost-goBack' to='/'>
                 <span> &#8592;</span> <span>Go Back</span>
             </Link>
             {content ? (
@@ -32,4 +32,4 @@ const Blog = ({ content }) => {
     );
 };
 
-export default Blog;
+export default BlogPost;
