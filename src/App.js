@@ -1,9 +1,10 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import BlogPost from './pages/BlogPost';
+import BlogPost from './components/BlogPost';
 import { Fragment, React, useState } from 'react';
 import HomeFooter from './components/Footer';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   const [getBlogContent, setGetBlogContent] = useState([]);
@@ -18,6 +19,9 @@ function App() {
           <Routes>
             <Fragment>
               <Route path='/' element={<HomePage data={getData} />} />
+            </Fragment>
+            <Fragment>
+              <Route path='/blogs' element={<BlogPage data={getData} />} />
             </Fragment>
             <Fragment>
               <Route
