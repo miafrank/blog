@@ -2,10 +2,8 @@ import { React, useState, useEffect } from 'react';
 import EmptyList from '../components/EmptyList';
 import BlogList from '../components/BlogList';
 import Header from '../components/Header';
-import SearchBar from '../components/SearchBar';
 import { blogList } from '../config/Api';
 import NavBarHome from '../components/NavBar';
-import HomeFooter from '../components/Footer';
 
 const HomePage = ({ data }) => {
     const [blogs, setBlogs] = useState([]);
@@ -44,23 +42,16 @@ const HomePage = ({ data }) => {
         <div>
             <div className='home-header'></div>
             <Header />
-            <div className='search-bar-nav-container'>
-                <NavBarHome />
-                <div className='search-bar-home-page'>
-                    <SearchBar
-                        value={searchKey}
-                        clearSearch={handleClearSearch}
-                        formSubmit={handleSearchBar}
-                        handleSearchKey={(e) => setSearchKey(e.target.value)}
-                    />
-                </div>
-            </div>
+            <NavBarHome
+                value={searchKey}
+                clearSearch={handleClearSearch}
+                formSubmit={handleSearchBar}
+                handleSearchKey={(e) => setSearchKey(e.target.value)} />
             {!blogs.length ? (
                 <EmptyList />
             ) : (
                 <BlogList blogs={blogs} content={BlogContent} />
             )}
-            <HomeFooter />
         </div>
     );
 };
