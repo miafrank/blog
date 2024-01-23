@@ -40,7 +40,6 @@ const HomePage = ({ data }) => {
 
     return (
         <div>
-            <div className='home-header'></div>
             <Header />
             <NavBarHome
                 value={searchKey}
