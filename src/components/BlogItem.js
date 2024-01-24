@@ -5,7 +5,7 @@ import '../index.css';
 const BlogItem = ({ blog, content }) => {
     return (
         <div>
-            <img class="h-auto max-w-xl" src={blog.featured_image} alt="" />
+            <img class="h-auto max-w-lg rounded-lg shadow-xl" src={blog.featured_image} alt="" />
             <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{blog.title}</h1>
             <p class="mb-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">{blog.summary}</p>
             <footer>
