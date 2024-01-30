@@ -6,6 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
+    backgroundImage: {
+      'gradient': "url('../src/images/gradient.svg')",
+      'header': "url('../src/images/Home.png')",
+    },
   },
   plugins: [
     require('flowbite/plugin'),
