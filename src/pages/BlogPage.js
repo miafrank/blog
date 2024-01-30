@@ -18,7 +18,7 @@ const BlogPage = ({ data }) => {
 
     return (
         // TODO: Implement functional search on nav
-        <div className='blog-page'>
+        <div>
             <NavBar
                 value=""
                 clearSearch=""
