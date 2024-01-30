@@ -3,9 +3,11 @@ import '../index.css';
 import header from '../images/Home.png'
 
 const Header = () => (
-    <header className='home-header'>
-        <img src={header} alt="" class="h-full w-full object-contain" />
-    </header >
+    <div class="relative isolate overflow-hidden py-24">
+        <header>
+            <img class="h-auto bg-auto max-w-full object-cover relative" src={header} alt="" />
+        </header>
+    </div>
 );
 
 export default Header;
