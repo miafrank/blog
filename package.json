@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "nodemon --ext *"
+    "watch": "nodemon --ext *",
+    "tailwind-build": "npx tailwindcss -i ./src/index.css -o ./src/output.css --watch"
   },
   "eslintConfig": {
     "extends": [
