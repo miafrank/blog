@@ -34,15 +34,15 @@ const HomePage = ({ data }) => {
     }, []);
 
     return (
-        <div>
+        // <div class="flex flex-col h-screen">
+        <div class="overflow-y-auto">
             <NavBar
                 value={searchKey}
                 clearSearch={handleClearSearch}
                 formSubmit={handleSearchBar}
                 handleSearchKey={(e) => setSearchKey(e.target.value)} />
-            <Header />
-            <div className='blogItem-wrap'>
-                <p class="mb-3 text-left leading-loose text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">
+            <div>
+                <p class="mb-3 text-left leading-loose text-gray-500 dark:text-gray-400">
                     About Me:
 
                     “Ingredients for life,” said the backside of the truck. They mean food, but really food is only 1 ingredient of life. Life has so many more ingredients such as pain, happiness, laughter, joy, tears, and smiles. Life also has hard work, easy play, sleepless nights, and sunbathing by the ocean. Love, hatred, envy, self-assurance, and fear could be just down aisle 3 ready to be bought when needed. How I wish I could pull ingredients like these off shelves in a store.
