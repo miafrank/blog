@@ -5,7 +5,6 @@ import '../index.css';
 import { Link } from 'react-router-dom';
 
 const BlogPost = ({ content }) => {
-    console.log({ content })
     return (
         <>
             <Link className='blogPost-goBack' to='/blogs'>
