@@ -1,5 +1,4 @@
 import { React } from 'react';
-import Chip from './Chip';
 import EmptyList from './EmptyList';
 import '../index.css';
 import { Link } from 'react-router-dom';
@@ -8,7 +7,8 @@ const BlogPost = ({ content }) => {
     return (
         <>
             <Link className='blogPost-goBack' to='/blogs'>
-                <span> &#8592;</span> <span>Go Back</span>
+                <span> &#8592;</span> 
+                <span>Go Back</span>
             </Link>
             {content ? (
                 <div className='blog-wrap'>
