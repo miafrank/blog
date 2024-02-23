@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-const NavBar = ({ formSubmit, value, handleSearchKey, clearSearch }) => {
+const NavBar = ({ formSubmit, value, handleSearchKey }) => {
     return (
         <div className='nav-bar'>
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
