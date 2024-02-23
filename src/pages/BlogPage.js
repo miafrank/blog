@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import BlogList from '../components/BlogList';
 import { blogList } from '../config/Api';
-import NavBar from '../components/NavBar';
 
 const BlogPage = ({ data }) => {
     const [blogs, setBlogs] = useState([]);
@@ -17,13 +16,7 @@ const BlogPage = ({ data }) => {
     }, []);
 
     return (
-        // TODO: Implement functional search on nav
         <div>
-            <NavBar
-                value=""
-                clearSearch=""
-                formSubmit=""
-                handleSearchKey="" />
             <BlogList blogs={blogs} content={BlogContent} />
         </div>
     );
