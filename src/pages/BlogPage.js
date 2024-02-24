@@ -16,9 +16,9 @@ const BlogPage = ({ data }) => {
     }, []);
 
     return (
-        <div>
+        <div class="h-screen">
             <BlogList blogs={blogs} content={BlogContent} />
-        </div>
+        </div >
     );
 };
 export default BlogPage;
