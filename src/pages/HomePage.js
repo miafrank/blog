@@ -1,48 +1,12 @@
-import { React, useState, useEffect } from 'react';
+import React from 'react';
 import Header from '../components/Header';
-import { blogList } from '../config/Api';
-import NavBar from '../components/NavBar';
 
 const HomePage = ({ data }) => {
-    const [blogs, setBlogs] = useState([]);
-    const [searchKey, setSearchKey] = useState('');
-
-    const handleSearchBar = (e) => {
-        e.preventDefault();
-        handleSearchResults();
-    };
-
-    const handleSearchResults = () => {
-        const filtered = blogs.filter((blog) => {
-            return blog.tags[0].name.toLowerCase().includes(searchKey.toLowerCase());
-        });
-        setBlogs(filtered);
-    };
-
-    const handleClearSearch = () => {
-        blogList().then((res) => {
-            setBlogs(res);
-        });
-        setSearchKey('');
-    };
-
-
-    useEffect(() => {
-        blogList().then((res) => {
-            setBlogs(res);
-        })
-    }, []);
-
     return (
-        // <div class="flex flex-col h-screen">
-        <div class="overflow-y-auto">
-            <NavBar
-                value={searchKey}
-                clearSearch={handleClearSearch}
-                formSubmit={handleSearchBar}
-                handleSearchKey={(e) => setSearchKey(e.target.value)} />
+        <div>
+            <Header />
             <div>
-                <p class="mb-3 text-left leading-loose text-gray-500 dark:text-gray-400">
+                <p class="mb-3 text-left py-1 leading-loose text-gray-500 dark:text-gray-400">
                     About Me:
 
                     “Ingredients for life,” said the backside of the truck. They mean food, but really food is only 1 ingredient of life. Life has so many more ingredients such as pain, happiness, laughter, joy, tears, and smiles. Life also has hard work, easy play, sleepless nights, and sunbathing by the ocean. Love, hatred, envy, self-assurance, and fear could be just down aisle 3 ready to be bought when needed. How I wish I could pull ingredients like these off shelves in a store.
