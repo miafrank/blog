@@ -4,7 +4,7 @@ import '../index.css';
 
 const BlogItem = ({ blog, content }) => {
     return (
-        <div class>
+        <div>
             <img class="h-auto max-w-md rounded-lg shadow-xl" src={blog.featured_image} alt="" />
             <h1 class="mb-4 mt-4 text-left font-thin tracking-wide text-gray-900 sm:text-2xl md:text-4xl lg:text-6xl">{blog.title}</h1>
             <p class="leading-wide break-words ml-2 text-left font-serif mb-5 text-black">{blog.summary}</p>
