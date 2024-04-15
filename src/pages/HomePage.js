@@ -1,12 +1,10 @@
-import React from 'react';
-import Header from '../components/Header';
+import React from 'react'
 
 const HomePage = ({ data }) => {
-    return (
+  return (
         <div>
-            <Header />
             <div>
-                <p class="mb-3 text-left py-1 leading-loose text-gray-500 dark:text-gray-400">
+                <p class="mb-3 text-justify text-balance py-8 px-8 leading-snug tracking-wide text-royal-blue dark:text-gray-400">
                     About Me:
 
                     “Ingredients for life,” said the backside of the truck. They mean food, but really food is only 1 ingredient of life. Life has so many more ingredients such as pain, happiness, laughter, joy, tears, and smiles. Life also has hard work, easy play, sleepless nights, and sunbathing by the ocean. Love, hatred, envy, self-assurance, and fear could be just down aisle 3 ready to be bought when needed. How I wish I could pull ingredients like these off shelves in a store.
@@ -26,6 +24,6 @@ const HomePage = ({ data }) => {
                 </p>
             </div>
         </div>
-    );
-};
-export default HomePage;
+  )
+}
+export default HomePage
