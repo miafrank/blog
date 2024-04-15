@@ -1,16 +1,17 @@
-import { React } from 'react';
-import EmptyList from './EmptyList';
-import '../index.css';
-import { Link } from 'react-router-dom';
+import { React } from 'react'
+import EmptyList from './EmptyList'
+import '../index.css'
+import { Link } from 'react-router-dom'
 
 const BlogPost = ({ content }) => {
-    return (
+  return (
         <>
             <Link className='blogPost-goBack' to='/blogs'>
-                <span> &#8592;</span> 
+                <span> &#8592;</span>
                 <span>Go Back</span>
             </Link>
-            {content ? (
+            {content
+              ? (
                 <div className='blog-wrap'>
                     <header>
                         <p className='blog-date'>Published {content.created}</p>
@@ -19,11 +20,12 @@ const BlogPost = ({ content }) => {
                     <p class="mb-3 whitespace-pre-line text-sm text-gray-900 dark:text-white"
                         dangerouslySetInnerHTML={{ __html: content.body }}></p>
                 </div>
-            ) : (
+                )
+              : (
                 <EmptyList />
-            )}
+                )}
         </>
-    );
-};
+  )
+}
 
-export default BlogPost;
+export default BlogPost

@@ -1,9 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../index.css';
+import '../index.css'
 
 const BlogItem = ({ blog, content }) => {
-    return (
+  return (
         <div>
             <img class="h-auto max-w-md rounded-lg shadow-xl" src={blog.featured_image} alt="" />
             <h1 class="mb-4 mt-4 text-left font-thin tracking-wide text-gray-900 sm:text-2xl md:text-4xl lg:text-6xl">{blog.title}</h1>
@@ -15,7 +13,7 @@ const BlogItem = ({ blog, content }) => {
                 </Link>
             </footer>
         </div>
-    );
-};
+  )
+}
 
-export default BlogItem;
+export default BlogItem
