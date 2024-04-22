@@ -6,9 +6,12 @@ module.exports = {
   ],
   theme: {
     backgroundImage: {
-      // gradient: "url('../src/images/gradient.svg')",
       gradient: "url('../src/images/pattern.svg')",
-      header: "url('../src/images/Home.png')"
+      header: "url('../src/images/Home.png')",
+      card_image_1: "url('../src/images/card_image_1.png')",
+      card_image_2: "url('../src/images/card_image_2.png')",
+      card_image_3: "url('../src/images/card_image_3.png')",
+      card_image_4: "url('../src/images/card_image_4.png')"
     },
     colors: {
       aqua: '#58E4E0',
