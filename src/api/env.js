@@ -3,6 +3,7 @@ export const BLOGGER_API_KEY = process.env.BLOGGER_API_KEY
 export const BLOGGER_USER_ID = process.env.BLOGGER_USER_ID
 export const BLOGGER_CLIENT_ID = process.env.BLOGGER_CLIENT_ID
 export const BLOGGER_CLIENT_SECRET = process.env.BLOGGER_CLIENT_SECRET
+export const BLOGGER_BLOG_URL = process.env.BLOGGER_BLOG_URL
 export const API_KEY_PARAM = `?key=${BLOGGER_API_KEY}`
 export const TOKEN_URL = 'https://google.com/2.0/token'
 export const SCOPES = 'https://www.googleapis.com/auth/blogger'
