@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="640px" width="640px">
+  <defs>
+    <linearGradient id="0" x1="0.65" y1="0.02" x2="0.35" y2="0.98">
+      <stop offset="0%" stop-color="#f766a0"/>
+      <stop offset="4.25%" stop-color="#f27ba6"/>
+      <stop offset="8.5%" stop-color="#ed8cac"/>
+      <stop offset="12.75%" stop-color="#e99cb3"/>
+      <stop offset="17%" stop-color="#e6aaba"/>
+      <stop offset="21.25%" stop-color="#e5b6c2"/>
+      <stop offset="25.5%" stop-color="#e4c2ca"/>
+      <stop offset="29.75%" stop-color="#e5ced3"/>
+      <stop offset="34%" stop-color="#e7d8db"/>
+      <stop offset="38.25%" stop-color="#ebe3e4"/>
+      <stop offset="42.5%" stop-color="#f0eded"/>
+      <stop offset="51%" stop-color="#ffffff"/>
+      <stop offset="55.08%" stop-color="#ffffff"/>
+      <stop offset="59.17%" stop-color="#ffffff"/>
+      <stop offset="63.25%" stop-color="#ffffff"/>
+      <stop offset="67.33%" stop-color="#ffffff"/>
+      <stop offset="71.42%" stop-color="#ffffff"/>
+      <stop offset="75.5%" stop-color="#ffffff"/>
+      <stop offset="79.58%" stop-color="#ffffff"/>
+      <stop offset="83.67%" stop-color="#ffffff"/>
+      <stop offset="87.75%" stop-color="#ffffff"/>
+      <stop offset="91.83%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="rgba(245, 243, 244, 0.92)"/>
+      <stop offset="100%" stop-color="rgba(237, 231, 232, 0.83)"/>
+      <stop offset="100%" stop-color="rgba(231, 219, 220, 0.75)"/>
+      <stop offset="100%" stop-color="rgba(227, 206, 208, 0.67)"/>
+      <stop offset="100%" stop-color="rgba(225, 192, 195, 0.58)"/>
+      <stop offset="100%" stop-color="rgba(225, 177, 182, 0.5)"/>
+      <stop offset="100%" stop-color="rgba(228, 161, 167, 0.42)"/>
+      <stop offset="100%" stop-color="rgba(231, 144, 150, 0.33)"/>
+      <stop offset="100%" stop-color="rgba(236, 124, 131, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(242, 101, 108, 0.17)"/>
+      <stop offset="100%" stop-color="rgba(255, 0, 0, 0)"/>
+    </linearGradient>
+    <linearGradient id="2" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0%" stop-color="#7ed8e0"/>
+      <stop offset="25%" stop-color="rgba(140, 187, 237, 0.75)"/>
+      <stop offset="50%" stop-color="rgba(196, 141, 240, 0.5)"/>
+      <stop offset="100%" stop-color="rgba(255, 0, 0, 0)"/>
+    </linearGradient>
+    <linearGradient id="3" x1="0.95" y1="0.71" x2="0.05" y2="0.29">
+      <stop offset="0%" stop-color="#294ea0"/>
+      <stop offset="9.29%" stop-color="rgba(109, 46, 209, 0.86)"/>
+      <stop offset="18.57%" stop-color="rgba(147, 41, 186, 0.71)"/>
+      <stop offset="27.86%" stop-color="rgba(171, 36, 173, 0.57)"/>
+      <stop offset="37.14%" stop-color="rgba(192, 32, 161, 0.43)"/>
+      <stop offset="46.43%" stop-color="rgba(213, 25, 144, 0.29)"/>
+      <stop offset="65%" stop-color="rgba(255, 0, 0, 0)"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#0)" height="100%" width="100%"/>
+  <rect fill="url(#1)" height="100%" width="100%"/>
+  <rect fill="url(#2)" height="100%" width="100%"/>
+  <rect fill="url(#3)" height="100%" width="100%"/>
+</svg>

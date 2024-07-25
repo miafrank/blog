@@ -1,9 +1,7 @@
-'use client';
-
-import React from 'react';
-import '../index.css';
-import { Footer } from 'flowbite-react';
-import { BsGithub, BsLinkedin, BsMailbox, BsPhone } from 'react-icons/bs';
+import React from 'react'
+import '../index.css'
+import { Footer } from 'flowbite-react'
+import { BsGithub, BsLinkedin, BsMailbox, BsPhone } from 'react-icons/bs'
 
 const HomeFooter = () => (
     <footer class="bg-white shadow  border-gray-200 dark:bg-gray-900">
@@ -29,6 +27,6 @@ const HomeFooter = () => (
             </div>
         </div>
     </footer>
-);
+)
 
-export default HomeFooter;
+export default HomeFooter
