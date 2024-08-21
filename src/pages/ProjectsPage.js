@@ -3,6 +3,7 @@ import cardImageBlogs from "../images/card_image_1.png";
 import cardImagePopularTweets from "../images/card_image_2.png";
 import cardImageChallenges from "../images/card_image_3.png";
 import cardImageMixtape from "../images/card_image_4.png";
+import Card from "../components/Card";
 
 const ProjectsPage = () => {
   const repos = {
