@@ -15,59 +15,16 @@ function App() {
     setGetBlogContent(blog);
   };
 
-  const [blogs, setBlogs] = useState([]);
-  const [searchKey, setSearchKey] = useState("");
-
-  const testing = useRef();
-  const handleSearchBar = (e) => {
-    e.preventDefault();
-    handleSearchResults();
-  };
-
-  const handleSearchResults = () => {
-    const filtered = blogs.filter((blog) => {
-      return blog.tags[0].name.toLowerCase().includes(searchKey.toLowerCase());
-    });
-    testing.current = blogs;
-    setBlogs(filtered);
-  };
-
-  // const handleClearSearch = () => {
-  //   blogList().then((res) => {
-  //     blogs.current = res;
-  //   });
-  //   // setSearchKey('');
-  // };
-
-  // useEffect(() => {
-  //   blogList().then((res) => {
-  //     blogs.current = res
-  //     // setBlogs(res);
-  //   })
-  // }, [blogs]);
-
   return (
     <div class="flex flex-col md:mx-auto bg-gradient bg-scroll bg-cover bg-no-repeat">
-      {/* </div><div class="flex flex-col md:mx-auto bg-gradient-to-r from-hot-pink to-aqua bg-cover "> */}
-      {/* TODO: Refactor/Fix NavBar Search */}
-      <NavBar
-        value={searchKey}
-        // clearSearch={handleClearSearch}
-        formSubmit={handleSearchBar}
-        handleSearchKey={(e) => setSearchKey(e.target.value)}
-      />
-      {/* bg-gradient-to-r from-aqua via-hot-pink to-royal-blue */}
+      <NavBar />
       <div
         class="md:container md:mx-auto justify-stretch bg-white"
         className="page-container"
       >
         <Routes>
           <Fragment>
-            <Route
-              class="flex-1"
-              path="/"
-              element={<HomePage data={getData} />}
-            />
+            <Route class="flex-1" path="/" element={<HomePage />} />
           </Fragment>
           <Fragment>
             <Route
