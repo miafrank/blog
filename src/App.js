@@ -1,10 +1,11 @@
 import "./App.css";
+import { Fragment, React, useState } from "react";
+
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BlogPost from "./components/BlogPost";
 import ProjectsPage from "./pages/ProjectsPage";
 import ConnectPage from "./pages/ContactPage";
-import { Fragment, React, useRef, useState } from "react";
 import HomeFooter from "./components/Footer";
 import BlogPage from "./pages/BlogPage";
 import NavBar from "./components/NavBar";
