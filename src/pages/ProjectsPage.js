@@ -11,7 +11,6 @@ const ProjectsPage = () => {
       link: "https://github.com/miafrank/blog",
       description: `
         Tech: React | TypeScript | Tailwind
-
         Description: Repository for this website`,
       image: cardImageBlogs,
     },
@@ -19,15 +18,13 @@ const ProjectsPage = () => {
       link: "https://github.com/miafrank/popular-tweets-python",
       description: `
         Tech: Python | Kafka | Twitter API
-
-        Description: Repository for this website`,
+        Description: Twitter scraper that ingests tweets based on a search term`,
       image: cardImagePopularTweets,
     },
     CodeChallenges: {
       link: "https://github.com/miafrank/code_challenges",
       description: `
         Tech: Leetcode | Hackerrank
-
         Description: Repository for this website`,
       image: cardImageChallenges,
     },
@@ -35,8 +32,7 @@ const ProjectsPage = () => {
       link: "https://github.com/miafrank/mixtape",
       description: `
         Tech: Python | Spotify API | Twilio API
-
-        Description: Repository for this website`,
+        Description: App to text Spotify music to a friend`,
       image: cardImageMixtape,
     },
   };
