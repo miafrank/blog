@@ -42,7 +42,7 @@ const ProjectsPage = () => {
   };
   return (
     <div
-      class="flex-col flex-auto justify-evenly items-center pt-5 pb-5 space-y-4"
+      class="flex-col flex-auto pt-5 pb-5 space-y-4 items-center"
       className="projects-page"
     >
       {Object.entries(repos).map(
