@@ -17,7 +17,7 @@ function App() {
   };
 
   return (
-    <div class="flex flex-col md:mx-auto bg-gradient bg-scroll bg-cover bg-no-repeat">
+    <div class="flex flex-col md:mx-auto bg-gradient bg-fixed bg-cover bg-no-repeat">
       <NavBar />
       <div
         class="md:container md:mx-auto justify-stretch bg-white"
