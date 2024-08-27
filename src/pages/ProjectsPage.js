@@ -27,8 +27,8 @@ const ProjectsPage = () => {
       name: "Code Challenges",
       link: "https://github.com/miafrank/code_challenges",
       description: `
-        Tech: Leetcode | Hackerrank
-        Description: Repository for this website`,
+        Tech: Python
+        Description: Leetcode | Hackerrank`,
       image: cardImageChallenges,
     },
     Mixtape: {
