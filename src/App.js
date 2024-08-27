@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BlogPost from "./components/BlogPost";
 import ProjectsPage from "./pages/ProjectsPage";
-import ConnectPage from "./pages/ContactPage";
+// import ConnectPage from "./pages/ContactPage";
 import HomeFooter from "./components/Footer";
 import BlogPage from "./pages/BlogPage";
 import NavBar from "./components/NavBar";
@@ -44,9 +44,10 @@ function App() {
           <Fragment>
             <Route class="flex-1" path="/projects" element={<ProjectsPage />} />
           </Fragment>
+          {/* TODO: Update connects page
           <Fragment>
             <Route class="flex-1" path="/connect" element={<ConnectPage />} />
-          </Fragment>
+          </Fragment> */}
         </Routes>
       </div>
       <HomeFooter />
