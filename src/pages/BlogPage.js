@@ -1,23 +1,26 @@
 import { useEffect, useState } from "react";
-import { getBlogById } from "../api/client";
-import BlogList from "../components/BlogList";
+// import { getBlogById } from "../api/client";
+
+import comingSoonImage from "../images/coming_soon.png";
 
 const BlogPage = ({ data }) => {
-  const [blogs, setBlogs] = useState([]);
+  // const [blogs, setBlogs] = useState([]);
 
-  useEffect(() => {
-    getBlogById().then((res) => {
-      setBlogs(res);
-    });
-  }, []);
+  // useEffect(() => {
+  //   getBlogById().then((res) => {
+  //     setBlogs(res);
+  //   });
+  // }, []);
 
-  const BlogContent = (id) => {
-    data(id);
-  };
-  // Update BlogList to use flowbite typography for article formatting
+  // const BlogContent = (id) => {
+  //   data(id);
+  // };
+  // TODO: Update BlogList to use flowbite typography for article formatting
+  // TODO: Remove 'coming soon' image after creating blog posts
   return (
-    <div class="h-screen">
-      <BlogList blogs={blogs} content={BlogContent} />
+    <div class="flex justify-center items-center h-screen">
+      {/* <BlogList blogs={blogs} content={BlogContent} /> */}
+      <img class="rounded-lg" src={comingSoonImage} alt="image description" />
     </div>
   );
 };
