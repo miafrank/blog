@@ -1,7 +1,13 @@
 import React from "react";
 import "../index.css";
 import { Footer } from "flowbite-react";
-import { BsGithub, BsLinkedin, BsMailbox, BsPhone } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsMailbox,
+  BsPhone,
+  BsCalendar,
+} from "react-icons/bs";
 
 const HomeFooter = () => (
   <footer class="bg-white shadow  border-gray-200 dark:bg-gray-900">
@@ -27,13 +33,16 @@ const HomeFooter = () => (
               />
             </li>
             <li>
-              <Footer.Icon href="tel:314-000-0000" icon={BsPhone} />
+              <Footer.Icon href="tel:314-530-9381" icon={BsPhone} />
             </li>
             <li>
               <Footer.Icon
                 href="mailto: mia.jo.frank@gmail.com"
                 icon={BsMailbox}
               />
+            </li>
+            <li>
+              <Footer.Icon href="https://cal.com/miafrank/" icon={BsCalendar} />
             </li>
           </ul>
         </div>
