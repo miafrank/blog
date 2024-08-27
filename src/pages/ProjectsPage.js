@@ -7,7 +7,8 @@ import Card from "../components/Card";
 
 const ProjectsPage = () => {
   const repos = {
-    Blogs: {
+    Website: {
+      name: "Website",
       link: "https://github.com/miafrank/blog",
       description: `
         Tech: React | TypeScript | Tailwind
@@ -15,6 +16,7 @@ const ProjectsPage = () => {
       image: cardImageBlogs,
     },
     PopularTweets: {
+      name: "Popular Tweets",
       link: "https://github.com/miafrank/popular-tweets-python",
       description: `
         Tech: Python | Kafka | Twitter API
@@ -22,6 +24,7 @@ const ProjectsPage = () => {
       image: cardImagePopularTweets,
     },
     CodeChallenges: {
+      name: "Code Challenges",
       link: "https://github.com/miafrank/code_challenges",
       description: `
         Tech: Leetcode | Hackerrank
@@ -29,6 +32,7 @@ const ProjectsPage = () => {
       image: cardImageChallenges,
     },
     Mixtape: {
+      name: "Mixtape",
       link: "https://github.com/miafrank/mixtape",
       description: `
         Tech: Python | Spotify API | Twilio API
@@ -37,7 +41,10 @@ const ProjectsPage = () => {
     },
   };
   return (
-    <div class="pt-5 pb-5 grid grid-cols-2 items-center space-y-6 justify-evenly">
+    <div
+      class="flex-col flex-auto justify-evenly items-center pt-5 pb-5 space-y-4"
+      className="projects-page"
+    >
       {Object.entries(repos).map(
         (
           [key, _], // eslint-disable-line no-unused-vars
@@ -45,10 +52,10 @@ const ProjectsPage = () => {
         ) => (
           <dl key={i}>
             <Card
-              repoName={key}
+              repoName={repos[key].name}
               repoLink={repos[key].link}
-              repoDescription={repos[key].description}
               repoImg={repos[key].image}
+              repoDescription={repos[key].description}
             ></Card>
           </dl>
         ),
