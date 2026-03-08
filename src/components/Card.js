@@ -1,23 +1,44 @@
 import "../index.css";
 
-const Card = ({ repoName, repoLink, repoDescription, repoImg }) => {
+const Card = ({
+  repoName,
+  repoLink,
+  repoImg,
+  techDescription,
+  repoDescription
+}) => {
   return (
-    <div class="max-w-sm object-scale-down max-h-full m-auto items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a
-        href={repoLink}
-        class="block max-w-lg p-4 bg-white border border-tiffany-blue rounded-md shadow hover:bg-tiffany-blue dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-      >
-        <img class="rounded-t-lg scale-90" src={repoImg} />
-      </a>
-      <div class="p-5 rounded-md">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-hot-pink dark:text-white">
-            {repoName}
-          </h5>
-        </a>
-        <p class="font-normal whitespace-pre-line text-pretty text-royal-blue dark:text-gray-400">
+    <div className="flex flex-col h-full border border-gray-200 rounded-xl overflow-hidden shadow-sm bg-white">
+      {/* Image with fixed aspect ratio */}
+      <img
+        src={repoImg}
+        alt={repoName}
+        className="w-full h-48 object-cover border-b"
+      />
+
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-gray-900 mb-1">{repoName}</h3>
+
+        {/* Tech Stack - styled differently (italic or bold) */}
+        <p className="text-xs font-semibold uppercase tracking-wider text-blue-600 mb-3">
+          {techDescription}
+        </p>
+
+        {/* Repo Description - with line-clamp for uniformity */}
+        <p className="text-gray-600 text-sm flex-grow line-clamp-3 leading-relaxed">
           {repoDescription}
         </p>
+
+        <div className="mt-6">
+          <a
+            href={repoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors"
+          >
+            View Repository
+          </a>
+        </div>
       </div>
     </div>
   );
