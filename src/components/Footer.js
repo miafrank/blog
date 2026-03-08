@@ -16,7 +16,7 @@ const HomeFooter = () => (
           <Footer.Copyright
             href="https://www.linkedin.com/in/mia-frank/"
             by="Mia Frank"
-            year={2024}
+            year={2026}
           />
           <ul className="flex flex-wrap items-center space-x-4 mb-6 text-sm font-medium text-left text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
